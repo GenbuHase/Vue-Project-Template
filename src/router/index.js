@@ -1,11 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import Home from "../views/Home.vue";
-import SkillTree from "../views/SkillTree.vue";
-import NotFoundPage from "../views/errors/404.vue";
-
 Vue.use(VueRouter);
+
+
+import Home from "../views/Home.vue";
 
 
 
@@ -17,16 +16,6 @@ export default new VueRouter({
 		{
 			path: "/",
 			component: Home
-		},
-
-		{
-			path: "/:character",
-			component: SkillTree
-		},
-
-		{
-			path: "*",
-			component: NotFoundPage
 		}
 	]
 });
